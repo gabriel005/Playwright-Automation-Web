@@ -30,6 +30,10 @@ Para rodar todos os testes:
 ```sh 
 npx cucumber-js --require src/tests/keywords src/tests/feature
 ```
+Para gerar relatórios dos testes:
+```sh 
+node report.js
+```
 
 
 ## **Detalhes dos Testes**
