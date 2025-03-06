@@ -17,6 +17,13 @@ Certifique-se de ter o Node.js instalado e execute:
 ```sh 
 npm install
 ```
+```sh 
+npm install --save-dev @cucumber/cucumber@11.0.0
+```
+```sh 
+npx playwright install
+```
+
 
 ## **2️⃣ Executando os Testes**
 Para rodar todos os testes:
