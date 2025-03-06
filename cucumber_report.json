@@ -1,0 +1,63 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-com-credenciais-inválidas;usuário-tenta-fazer-login-com-credenciais-inválidas",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Usuário tenta fazer login com credenciais inválidas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1911636000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "eu tento fazer login com o usuário \"user\" e senha \"wrongpassword\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122248499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "eu devo ver a mensagem de erro \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 287090499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-com-credenciais-inválidas",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login com credenciais inválidas",
+    "tags": [],
+    "uri": "src\\tests\\feature\\login.feature"
+  }
+]
