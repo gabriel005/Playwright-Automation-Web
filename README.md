@@ -10,6 +10,7 @@ Sistema Operacional: Windows
 Linguagem: JavaScript  
 Framework: Playwright  
 URL do site: https://www.saucedemo.com  
+Pipeline de Automação: CI/CD: GitHub Actions
 
 ## **🚀 Como Executar os Testes**
 1️⃣ Instalação das Dependências  
