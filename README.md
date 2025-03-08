@@ -28,7 +28,7 @@ npx playwright install
 ## **2️⃣ Executando os Testes**
 Para rodar todos os testes:
 ```sh 
-npx cucumber-js --require src/tests/keywords src/tests/feature --tags "@login_invalido" --format json:cucumber_report.json
+npx cucumber-js --require src/tests/keywords/hooks.js --require src/tests/keywords src/tests/feature --tags "@site" --format json:cucumber_report.json 
 ```
 Para gerar relatórios dos testes:
 ```sh 
