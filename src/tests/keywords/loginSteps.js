@@ -19,13 +19,13 @@ Then('eu devo ver a mensagem de erro {string}', async function (errorMessage) {
   //await page.pause(); // Isso vai pausar o navegador, permitindo inspeção
 });
 
-Then('eu devo ser redirecionado para tela inicial', async () => {
-  const ProductPage = new ProductPage(this.page);
-  const cardVisible = await ProductPage.cardList();
+Then('eu devo ser redirecionado para tela inicial', async function () {
+  this.productPage = new ProductPage(this.page);
+  const cardVisible = await this.productPage.cardList();
   expect(cardVisible).toBeTruthy(); // Verifica se o card está visível
 });
 
-Then('eu devo ver a mensagem de bloqueado {string}', async (blockMessage) => { //blockMessage contem o valor de {string}
+Then('eu devo ver a mensagem de bloqueado {string}', async function (blockMessage) { //blockMessage contem o valor de {string}
   const actualBlockMessage = await this.loginPage.getErrorMessage(); 
   expect(actualBlockMessage).toBe(blockMessage);
 });

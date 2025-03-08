@@ -401,7 +401,7 @@ pre {
           </div>
           <div class="label-container">
             <div class="generated-on">
-              Sat Mar 08 2025 11:38:55 GMT-0300 (Horário Padrão de Brasília)
+              Sat Mar 08 2025 19:59:18 GMT-0300 (Horário Padrão de Brasília)
             </div>
           </div>
       </div>
@@ -417,7 +417,7 @@ pre {
         </div>
         <div class="feature-value">
           <h5>
-            3
+            6
           </h5>
         </div>
       </div>
@@ -437,7 +437,7 @@ pre {
         </div>
         <div class="feature-value">
           <h5>
-            0
+            3
           </h5>
         </div>
       </div>
@@ -454,7 +454,7 @@ pre {
 
     <div>
       <p class="text-left">
-        Execution Time: 7s 217ms
+        Execution Time: 9s 707ms
       </p>
       <p class="text-right">
         <a id="expand_all">Expand All</a>
@@ -471,18 +471,19 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-passed">
+<div class="feature-failed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     
-                    <div class="tags"> <span class="tag">@login</span>
+                    <div class="tags"> <span class="tag">@site</span>
+                         <span class="tag">@login</span>
                         
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeatureplaywrite7db71aea-6003-4336-8f5e-8251e58eed31">
+                    <a data-toggle="collapse" href="#collapseFeatureplaywritea695aa65-7323-4c4e-8ccf-6b439ba277d7">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Cenários de Login no site saucedemo
@@ -490,11 +491,12 @@ pre {
 
                         
 
-                        <span>7s 217ms</span>
+                        <span>4s 763ms</span>
                                 
               <span class="label label-success"
-                                                         title="3 Scenarios Passed">3</span>
-              
+                                                         title="1 Scenarios Passed">1</span>
+              <span class="label label-danger"
+                                                         title="2 Scenarios Failed">2</span>
               
               
               
@@ -503,7 +505,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeatureplaywrite7db71aea-6003-4336-8f5e-8251e58eed31" class="panel-collapse collapse">
+            <div id="collapseFeatureplaywritea695aa65-7323-4c4e-8ccf-6b439ba277d7" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -517,24 +519,25 @@ pre {
                                     
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioplaywritee54cfb31-0dca-4b35-81b2-c8a82c586cfa">
+                                <a data-toggle="collapse" href="#collapseScenarioplaywrite050de6c3-db3a-450a-b424-569242bb67dd">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b><div class="ellipsis" data-text="Login válido (usuário e senha corretos)">Login válido (usuário e senha corretos)</div>
                                         </div>
                                         <div>
                             <span class="label-container ">
-                                <span>2s 504ms</span>
+                                <span>1s 625ms</span>
                               
                               <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
+                                                               title="2 Steps Passed">2</span>
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -543,10 +546,12 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioplaywritee54cfb31-0dca-4b35-81b2-c8a82c586cfa"
+                        <div id="collapseScenarioplaywrite050de6c3-db3a-450a-b424-569242bb67dd"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
+                                
+                                
                                 
                                 
                                 
@@ -564,7 +569,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1s 985ms
+                               1s 446ms
                               </span>
                             
                          
@@ -602,7 +607,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               170ms
+                               177ms
                               </span>
                             
                          
@@ -630,8 +635,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -640,7 +645,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               348ms
+                               < 1ms
                               </span>
                             
                          
@@ -653,6 +658,48 @@ pre {
                                 
 
                                     
+                                    <a href="#error0_03"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_03"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_03">
+                                            <br> ReferenceError: Cannot access 'ProductPage' before initialization
+    at World.(anonymous) (C:\Users\gabri\OneDrive\Documentos\QA\playwrite\src\tests\keywords\loginSteps.js:23:23)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_03" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>ReferenceError: Cannot access 'ProductPage' before initialization
+    at World.(anonymous) (C:\Users\gabri\OneDrive\Documentos\QA\playwrite\src\tests\keywords\loginSteps.js:23:23)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
 
                                     
 
@@ -661,6 +708,8 @@ pre {
                                     
                                 </div>
                                 </p>
+                                
+                                
                                 
                                 
                             </div>
@@ -677,7 +726,7 @@ pre {
                                     
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioplaywrite3162ee3a-595e-4ec9-8292-dbf4c4cb9f56">
+                                <a data-toggle="collapse" href="#collapseScenarioplaywritedf239885-f2ef-4585-a895-3b6f1d8bff26">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -687,7 +736,7 @@ pre {
                                         </div>
                                         <div>
                             <span class="label-container ">
-                                <span>2s 363ms</span>
+                                <span>1s 597ms</span>
                               
                               <span class="label label-success"
                                                                title="3 Steps Passed">3</span>
@@ -703,10 +752,12 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioplaywrite3162ee3a-595e-4ec9-8292-dbf4c4cb9f56"
+                        <div id="collapseScenarioplaywritedf239885-f2ef-4585-a895-3b6f1d8bff26"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
+                                
+                                
                                 
                                 
                                 
@@ -724,7 +775,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1s 958ms
+                               1s 465ms
                               </span>
                             
                          
@@ -762,7 +813,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               110ms
+                               104ms
                               </span>
                             
                          
@@ -800,7 +851,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               295ms
+                               27ms
                               </span>
                             
                          
@@ -823,6 +874,8 @@ pre {
                                 </p>
                                 
                                 
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -837,24 +890,25 @@ pre {
                                     
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioplaywritefd9ec5aa-aeb4-483f-9c87-d4121efc76c4">
+                                <a data-toggle="collapse" href="#collapseScenarioplaywriteb8fdb7bc-644c-4946-9a03-0e18119181b8">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b><div class="ellipsis" data-text="Bloqueio de usuário com conta bloqueada">Bloqueio de usuário com conta bloqueada</div>
                                         </div>
                                         <div>
                             <span class="label-container ">
-                                <span>2s 349ms</span>
+                                <span>1s 540ms</span>
                               
                               <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
+                                                               title="2 Steps Passed">2</span>
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -863,10 +917,12 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioplaywritefd9ec5aa-aeb4-483f-9c87-d4121efc76c4"
+                        <div id="collapseScenarioplaywriteb8fdb7bc-644c-4946-9a03-0e18119181b8"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
+                                
+                                
                                 
                                 
                                 
@@ -884,7 +940,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1s 918ms
+                               1s 431ms
                               </span>
                             
                          
@@ -922,7 +978,261 @@ pre {
                             
                           
                               <span class="step-duration">
-                               109ms
+                               108ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> eu devo ver a mensagem de bloqueado &quot;Epic sadface: Username and password do not match any user in this service&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_23"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_23"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_23">
+                                            <br> TypeError: Cannot read properties of undefined (reading 'getErrorMessage')
+    at World.(anonymous) (C:\Users\gabri\OneDrive\Documentos\QA\playwrite\src\tests\keywords\loginSteps.js:29:51)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_23" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>TypeError: Cannot read properties of undefined (reading 'getErrorMessage')
+    at World.(anonymous) (C:\Users\gabri\OneDrive\Documentos\QA\playwrite\src\tests\keywords\loginSteps.js:29:51)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-failed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags"> <span class="tag">@site</span>
+                         <span class="tag">@products</span>
+                        
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeatureplaywrite530af1e8-ca9e-4b7f-a018-c755e5d62028">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>Cenários de Navegação e Produtos
+                        <span class="label-container">
+
+                        
+
+                        <span>4s 944ms</span>
+                                
+              <span class="label label-success"
+                                                         title="2 Scenarios Passed">2</span>
+              <span class="label label-danger"
+                                                         title="1 Scenarios Failed">1</span>
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeatureplaywrite530af1e8-ca9e-4b7f-a018-c755e5d62028" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @products_list</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenarioplaywriteb6cdfbf4-7569-4850-bc8b-40ae48dfbeb4">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Verificação da listagem de produtos">Verificação da listagem de produtos</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>1s 639ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenarioplaywriteb6cdfbf4-7569-4850-bc8b-40ae48dfbeb4"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> que eu estou na página de login</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 451ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> eu tento fazer login com o usuário &quot;standard_user&quot; e senha &quot;secret_sauce&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               151ms
                               </span>
                             
                          
@@ -956,11 +1266,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span class="stepname"> eu devo ver a mensagem de bloqueado &quot;Epic sadface: Username and password do not match any user in this service&quot;</span>
+                          <span class="stepname"> eu devo ver a lista de produtos na pagina principal</span>
                             
                           
                               <span class="step-duration">
-                               321ms
+                               36ms
                               </span>
                             
                          
@@ -981,6 +1291,380 @@ pre {
                                     
                                 </div>
                                 </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @products_order</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenarioplaywritece3c8e17-5542-4116-a225-8bcc084caf7b">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Ordenação de produtos">Ordenação de produtos</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>1s 671ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenarioplaywritece3c8e17-5542-4116-a225-8bcc084caf7b"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> que eu estou na página de produtos</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 595ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> clico para ordernar um produto por preço</span>
+                            
+                          
+                              <span class="step-duration">
+                               58ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> eu devo ver os preços do menor pro maior</span>
+                            
+                          
+                              <span class="step-duration">
+                               17ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @products_details</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenarioplaywritec6a9a0c9-f913-4c19-825f-5095137e6b22">
+                                    <div>
+
+                                        <div style="padding-right: 70px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Acesso à página de detalhes de um produto">Acesso à página de detalhes de um produto</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>1s 633ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="1 Steps Skipped">1</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenarioplaywritec6a9a0c9-f913-4c19-825f-5095137e6b22"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> que eu estou na página de produtos</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 632ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> clico para visualizar os detalhes de um produto</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error1_22"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error1_22"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-1_22">
+                                            <br> TypeError: this.productPage.clicDetails is not a function
+    at World.(anonymous) (C:\Users\gabri\OneDrive\Documentos\QA\playwrite\src\tests\keywords\productsSteps.js:19:26)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-1_22" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>TypeError: this.productPage.clicDetails is not a function
+    at World.(anonymous) (C:\Users\gabri\OneDrive\Documentos\QA\playwrite\src\tests\keywords\productsSteps.js:19:26)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> eu devo ver a pagina de detalhes do produto selecionado</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
                                 
                                 
                             </div>
@@ -1016,8 +1700,8 @@ pre {
     google.setOnLoadCallback(function () {
       drawChart({
         "title": "Features",
-        "failed": 0,
-        "passed": 1,
+        "failed": 2,
+        "passed": 0,
         "notdefined": 0,
         "pending": 0,
         "skipped": 0,
@@ -1027,7 +1711,7 @@ pre {
     google.setOnLoadCallback(function () {
       drawChart({
         "title": "Scenarios",
-        "failed": 0,
+        "failed": 3,
         "passed": 3,
         "rerun": 0,
         "notdefined": 0,

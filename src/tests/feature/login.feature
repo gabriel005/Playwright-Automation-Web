@@ -1,4 +1,4 @@
-@login
+@site  @login
 Feature: Cenários de Login no site saucedemo
 
 @login_valido

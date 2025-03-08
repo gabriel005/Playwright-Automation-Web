@@ -1,4 +1,4 @@
-@products
+@site  @products
 Feature: Cenários de Navegação e Produtos
 
 @products_list

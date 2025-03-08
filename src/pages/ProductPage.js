@@ -24,6 +24,11 @@ class ProductPage {
     await this.page.waitForSelector(this.cardPriceSelector, { state: 'attached' });  // Aguarda a atualização dos preços 
   }
 
+  async clickDetails() {
+    await this.page.waitForSelector(this.cardImg, { state: 'visible' });
+    await this.page.click(this.cardImg);
+  }
+
 }
 
 module.exports = { ProductPage };

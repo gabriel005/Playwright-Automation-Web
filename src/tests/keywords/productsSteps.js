@@ -16,7 +16,7 @@ When('clico para ordernar um produto por preço', async function () {
 });
 
 When('clico para visualizar os detalhes de um produto', async function () {
-  await this.productPage.clicDetails(); 
+  await this.productPage.clickDetails(); 
 });
 
 Then("eu devo ver a lista de produtos na pagina principal", async function () {
