@@ -51,7 +51,8 @@ Ordenação de produtos
 Acesso à página de detalhes de um produto  
 
 `3️⃣ Carrinho de Compras:`  
-Adição e remoção de produtos do carrinho  
+Adição de produtos do carrinho
+Remoção de produtos do carrinho
 Verificação do conteúdo do carrinho  
 
 `4️⃣ Checkout:`  
