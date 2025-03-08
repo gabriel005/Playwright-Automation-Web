@@ -4,60 +4,192 @@
     "elements": [
       {
         "description": "",
-        "id": "login-com-credenciais-inválidas;usuário-tenta-fazer-login-com-credenciais-inválidas",
+        "id": "cenários-de-login-no-site-saucedemo;login-válido-(usuário-e-senha-corretos)",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Usuário tenta fazer login com credenciais inválidas",
+        "line": 5,
+        "name": "Login válido (usuário e senha corretos)",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 6,
             "name": "que eu estou na página de login",
             "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:7"
+              "location": "src\\tests\\keywords\\loginSteps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1911636000
+              "duration": 1985138099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "eu tento fazer login com o usuário \"user\" e senha \"wrongpassword\"",
+            "line": 7,
+            "name": "eu tento fazer login com o usuário \"standard_user\" e senha \"secret_sauce\"",
             "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:15"
+              "location": "src\\tests\\keywords\\loginSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 122248499
+              "duration": 170856899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "eu devo ver a mensagem de erro \"Epic sadface: Username and password do not match any user in this service\"",
+            "line": 8,
+            "name": "eu devo ser redirecionado para tela inicial",
             "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:19"
+              "location": "src\\tests\\keywords\\loginSteps.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 287090499
+              "duration": 348017900
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@login_valido",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cenários-de-login-no-site-saucedemo;login-inválido-(credenciais-erradas)",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login inválido (credenciais erradas)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1958684700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "eu tento fazer login com o usuário \"user\" e senha \"wrongpassword\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110250700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "eu devo ver a mensagem de erro \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 295035400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@login_invalido",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cenários-de-login-no-site-saucedemo;bloqueio-de-usuário-com-conta-bloqueada",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Bloqueio de usuário com conta bloqueada",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1918036199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "eu tento fazer login com o usuário \"user\" e senha \"wrongpassword\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109499900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "eu devo ver a mensagem de bloqueado \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 321988899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@login_bloqueado",
+            "line": 16
+          }
+        ],
         "type": "scenario"
       }
     ],
-    "id": "login-com-credenciais-inválidas",
-    "line": 1,
+    "id": "cenários-de-login-no-site-saucedemo",
+    "line": 2,
     "keyword": "Feature",
-    "name": "Login com credenciais inválidas",
-    "tags": [],
+    "name": "Cenários de Login no site saucedemo",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
     "uri": "src\\tests\\feature\\login.feature"
   }
 ]

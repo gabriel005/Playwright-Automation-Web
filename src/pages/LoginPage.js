@@ -21,7 +21,7 @@ class LoginPage {
      // Aguarda até que a mensagem de erro esteja visível
      await this.page.waitForSelector(this.errorMessage);
      return await this.page.textContent(this.errorMessage);
-  }
+  }  
 
 }
 
