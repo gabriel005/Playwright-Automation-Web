@@ -60,7 +60,7 @@ Successful purchase completion
 
 ## **Test Report**
 The tests cover the following scenarios:  
-![image](https://github.com/user-attachments/assets/140b21a5-0bf3-40a4-950c-980a2f5ba6da)  
+![image](https://github.com/user-attachments/assets/4fb95f3b-71a7-416c-9c98-c007ee1cda20)  
 
   
 ## **📌 Final Considerations**
