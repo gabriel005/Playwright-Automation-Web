@@ -1,4 +1,4 @@
-## **Relatório de Teste Automatizado Utilizando Playwright e Cucumber**
+## **Teste Automatizado Utilizando Playwright e Cucumber**
 
 Testes Automatizados com Playwright - SauceDemo
 
@@ -64,6 +64,6 @@ Os testes cobrem os seguintes cenários:
 
   
 ## **📌 Considerações Finais**
-Este repositório pode ser expandido para incluir mais cenários e integração com pipelines CI/CD para execução contínua dos testes  
+Este repositório pode ser expandido para incluir mais cenários e possui integração com pipeline CI/CD no GitHub Actions para execução contínua dos testes  
    
 
