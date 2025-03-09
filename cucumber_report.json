@@ -4,214 +4,82 @@
     "elements": [
       {
         "description": "",
-        "id": "cenários-de-login-no-site-saucedemo;login-válido-(usuário-e-senha-corretos)",
+        "id": "cenários-de-login-no-site-saucedemo;remoção-de-produtos-do-carrinho",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Login válido (usuário e senha corretos)",
+        "line": 12,
+        "name": "Remoção de produtos do carrinho",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 623576300
+              "duration": 516282500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "que eu estou na página de login",
-            "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1513479900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "eu tento fazer login com o usuário \"standard_user\" e senha \"secret_sauce\"",
-            "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 157979800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "eu devo ser redirecionado para tela inicial",
-            "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 233905700
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 307152900
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@site",
-            "line": 1
-          },
-          {
-            "name": "@login",
-            "line": 1
-          },
-          {
-            "name": "@login_valido",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cenários-de-login-no-site-saucedemo;login-inválido-(credenciais-erradas)",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Login inválido (credenciais erradas)",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 479239399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "que eu estou na página de login",
-            "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1493112799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 13,
-            "name": "eu tento fazer login com o usuário \"user\" e senha \"wrongpassword\"",
+            "name": "que eu estou na página de produtos",
             "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:12"
+              "location": "src\\tests\\keywords\\productsSteps.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 112202299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "eu devo ver a mensagem de erro \"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 27344299
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 263891400
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@site",
-            "line": 1
-          },
-          {
-            "name": "@login",
-            "line": 1
-          },
-          {
-            "name": "@login_invalido",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cenários-de-login-no-site-saucedemo;bloqueio-de-usuário-com-conta-bloqueada",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Bloqueio de usuário com conta bloqueada",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 468274699
+              "duration": 1624872300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 18,
-            "name": "que eu estou na página de login",
+            "line": 14,
+            "name": "que tenho um produto adicionado",
             "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:7"
+              "location": "src\\tests\\keywords\\buySteps.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 1443680500
+              "duration": 170070100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 19,
-            "name": "eu tento fazer login com o usuário \"user\" e senha \"wrongpassword\"",
+            "line": 15,
+            "name": "clico em carrinho",
             "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:12"
+              "location": "src\\tests\\keywords\\buySteps.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 106381299
+              "duration": 38672500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "clico em remover produto",
+            "match": {
+              "location": "src\\tests\\keywords\\buySteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30289699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
-            "name": "eu devo ver a mensagem de bloqueado \"Epic sadface: Username and password do not match any user in this service\"",
+            "line": 17,
+            "name": "eu devo ver o produto removido no carrinho",
             "match": {
-              "location": "src\\tests\\keywords\\loginSteps.js:28"
+              "location": "src\\tests\\keywords\\buySteps.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 25334100
+              "duration": 10002500
             }
           },
           {
@@ -219,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 297523599
+              "duration": 181500
             }
           }
         ],
@@ -229,12 +97,12 @@
             "line": 1
           },
           {
-            "name": "@login",
+            "name": "@buy",
             "line": 1
           },
           {
-            "name": "@login_bloqueado",
-            "line": 16
+            "name": "@item_remove",
+            "line": 11
           }
         ],
         "type": "scenario"
@@ -250,10 +118,10 @@
         "line": 1
       },
       {
-        "name": "@login",
+        "name": "@buy",
         "line": 1
       }
     ],
-    "uri": "src\\tests\\feature\\login.feature"
+    "uri": "src\\tests\\feature\\03-buy.feature"
   }
 ]

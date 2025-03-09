@@ -2,12 +2,14 @@ const { Given, When, Then } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
 const { ProductPage } = require("../../pages/ProductPage");
 const { LoginPage } = require('../../pages/LoginPage');
+const { BuyPage } = require("../../pages/BuyPage");
 
 Given('que eu estou na página de produtos', async function () {
   this.loginPage = new LoginPage(this.page); 
   await this.loginPage.navigate(); 
   await this.loginPage.login("standard_user", "secret_sauce");
-  this.productPage = new ProductPage(this.page);
+  this.productPage = new ProductPage(this.page);  
+  this.buyPage = new BuyPage(this.page);
   await expect(this.page).toHaveTitle(/Swag Labs/);
 });
 
