@@ -1,17 +1,16 @@
 @site  @checkout
-Feature: Cenários de Checkout
+Feature: Checkout Scenarios
 
 @checkout_fail
-Scenario: Validação de erro ao tentar finalizar sem preencher os campos obrigatórios
-    Given que eu estou na página de checkout
-    When clico no botão de Continue
-    Then eu devo ver a mensagem no formulario de erro "Error: First Name is required"
+Scenario: Error validation when trying to checkout without filling in the required fields
+    Given I am on the checkout page
+    When I click the Continue button
+    Then I should see the error message in the form "Error: First Name is required"
 
 @checkout_finish
-Scenario: Finalização da compra com sucesso
-    Given que eu estou na página de checkout
-    When preencho todos os dados
-    When clico no botão de Continue
-    When clico no botão de Finish
-    Then eu devo ver a mensagem de sucesso "Thank you for your order!"
-    
+Scenario: Successful checkout completion
+    Given I am on the checkout page
+    When I fill in all the details
+    When I click the Continue button
+    When I click the Finish button
+    Then I should see the success message "Thank you for your order!"

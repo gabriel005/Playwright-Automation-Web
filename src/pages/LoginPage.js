@@ -18,7 +18,7 @@ class LoginPage {
   }
 
   async getErrorMessage() {
-     // Aguarda até que a mensagem de erro esteja visível
+     // Waits until the error message is visible
      await this.page.waitForSelector(this.errorMessage);
      return await this.page.textContent(this.errorMessage);
   }  

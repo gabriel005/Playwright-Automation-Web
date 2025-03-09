@@ -1,31 +1,31 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
 
-Given('que tenho um produto adicionado', async function () {
+Given('I have a product added', async function () {
   await this.buyPage.clickAdd();
   await this.buyPage.clickCart();
 });
 
-When("clico para adicionar um produto no carrinho", async function () {
+When("I click to add a product to the cart", async function () {
   await this.buyPage.clickAdd();
 });
 
-When("clico em carrinho", async function () {
+When("I click on the cart", async function () {
   await this.buyPage.clickCart();
 });
 
-When("clico em remover produto", async function () {
+When("I click to remove the product", async function () {
   await this.buyPage.clickRemove();
 });
 
-Then("eu devo ver o produto adicionado no carrinho",  async function () {
-    await this.page.waitForSelector("#remove-sauce-labs-backpack", { state: "visible" }); // Aguarda o botão aparecer
-    await expect(this.page.locator("#remove-sauce-labs-backpack")).toBeVisible(); // Verifica se está visível
+Then("I should see the added product in the cart",  async function () {
+    await this.page.waitForSelector("#remove-sauce-labs-backpack", { state: "visible" }); // Wait for the button to appear
+    await expect(this.page.locator("#remove-sauce-labs-backpack")).toBeVisible(); // Check if it is visible
   }
 );
 
-Then("eu devo ver o produto removido no carrinho",  async function () {
+Then("I should see the removed product in the cart",  async function () {
     await this.page.waitForSelector("#remove-sauce-labs-backpack", { state: "hidden" }); 
-    await expect(this.page.locator("#remove-sauce-labs-backpack")).toBeHidden(); // Verifica se não está visível
+    await expect(this.page.locator("#remove-sauce-labs-backpack")).toBeHidden(); // Check if it is not visible
   }
 );

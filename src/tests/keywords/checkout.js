@@ -5,7 +5,7 @@ const { LoginPage } = require("../../pages/LoginPage");
 const { BuyPage } = require("../../pages/BuyPage");
 const { Checkout } = require("../../pages/Checkout");
 
-Given("que eu estou na página de checkout", async function () {
+Given("I am on the checkout page", async function () {
   this.loginPage = new LoginPage(this.page);
   this.productPage = new ProductPage(this.page);
   this.buyPage = new BuyPage(this.page);
@@ -19,22 +19,22 @@ Given("que eu estou na página de checkout", async function () {
   await this.checkoutPage.clickCheckout();
 });
 
-When("clico no botão de Continue", async function () {
+When("I click the Continue button", async function () {
   await this.checkoutPage.clickContinue();
 });
 
-When("preencho todos os dados", async function () {
-  await this.checkoutPage.form(); // Fazer o login com as credenciais fornecidas
+When("I fill in all the details", async function () {
+  await this.checkoutPage.form(); // Log in with the provided credentials
 });
 
-When("clico no botão de Finish", async function () {
+When("I click the Finish button", async function () {
   await this.checkoutPage.clickFinish();
 });
 
-Then("eu devo ver a mensagem no formulario de erro {string}",  async function (errorMessage) {
+Then("I should see the error message in the form {string}",  async function (errorMessage) {
   expect("Error: First Name is required").toBe(errorMessage);
 });
 
-Then("eu devo ver a mensagem de sucesso {string}",  async function (feedbackMessage) {
+Then("I should see the success message {string}",  async function (feedbackMessage) {
   expect("Thank you for your order!").toBe(feedbackMessage);
 });

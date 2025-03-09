@@ -1,20 +1,20 @@
 @site  @login
-Feature: Cenários de Login no site saucedemo
+Feature: Login Scenarios on the SauceDemo Website
 
-@login_valido
-Scenario: Login válido (usuário e senha corretos)
-    Given que eu estou na página de login
-    When eu tento fazer login com o usuário "standard_user" e senha "secret_sauce"
-    Then eu devo ser redirecionado para tela inicial
+@login_valid
+Scenario: Valid Login (correct username and password)
+    Given I am on the login page
+    When I attempt to log in with the username "standard_user" and password "secret_sauce"
+    Then I should be redirected to the home screen
     
-@login_invalido
-Scenario: Login inválido (credenciais erradas)
-    Given que eu estou na página de login
-    When eu tento fazer login com o usuário "user" e senha "wrongpassword"
-    Then eu devo ver a mensagem de erro "Epic sadface: Username and password do not match any user in this service"
+@login_invalid
+Scenario: Invalid Login (incorrect credentials)
+    Given I am on the login page
+    When I attempt to log in with the username "user" and password "wrongpassword"
+    Then I should see the error message "Epic sadface: Username and password do not match any user in this service"
 
-@login_bloqueado
-Scenario: Bloqueio de usuário com conta bloqueada
-    Given que eu estou na página de login
-    When eu tento fazer login com o usuário "user" e senha "wrongpassword"
-    Then eu devo ver a mensagem de bloqueado "Epic sadface: Username and password do not match any user in this service"
+@login_blocked
+Scenario: Blocked User Login
+    Given I am on the login page
+    When I attempt to log in with the username "locked_out_user" and password "wrongpassword"
+    Then I should see the blocked message "Epic sadface: Sorry, this user has been locked out."

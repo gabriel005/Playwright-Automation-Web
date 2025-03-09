@@ -1,20 +1,20 @@
 @site  @products
-Feature: Cenários de Navegação e Produtos
+Feature: Navigation and Products Scenarios
 
 @products_list
-Scenario: Verificação da listagem de produtos
-    Given que eu estou na página de login
-    When eu tento fazer login com o usuário "standard_user" e senha "secret_sauce"
-    Then eu devo ver a lista de produtos na pagina principal
+Scenario: Product listing verification
+    Given I am on the login page
+    When I attempt to log in with the username "standard_user" and password "secret_sauce"
+    Then I should see the product list on the main page
 
 @products_order
-Scenario: Ordenação de produtos
-    Given que eu estou na página de produtos
-    When clico para ordernar um produto por preço
-    Then eu devo ver os preços do menor pro maior
+Scenario: Product sorting
+    Given I am on the product page
+    When I click to sort a product by price
+    Then I should see the prices from lowest to highest
 
 @products_details
-Scenario: Acesso à página de detalhes de um produto
-    Given que eu estou na página de produtos
-    When clico para visualizar os detalhes de um produto
-    Then eu devo ver a pagina de detalhes do produto selecionado
+Scenario: Accessing the product details page
+    Given I am on the product page
+    When I click to view the details of a product
+    Then I should see the selected product's details page

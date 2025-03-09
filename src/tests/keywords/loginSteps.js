@@ -4,28 +4,27 @@ const { LoginPage } = require('../../pages/LoginPage');
 const { ProductPage } = require('../../pages/ProductPage');
 
 
-Given('que eu estou na página de login', async function () {
-  this.loginPage = new LoginPage(this.page); //Cria objeto da pagina
-  await this.loginPage.navigate(); // Navegar até a página de login
+Given('I am on the login page', async function () {
+  this.loginPage = new LoginPage(this.page); // Creates a page object
+  await this.loginPage.navigate(); // Navigate to the login page
 });
 
-When('eu tento fazer login com o usuário {string} e senha {string}', async function (username, password) {
-  await this.loginPage.login(username, password); // Fazer o login com as credenciais fornecidas
+When('I attempt to log in with the username {string} and password {string}', async function (username, password) {
+  await this.loginPage.login(username, password); // Log in with the provided credentials
 });
 
-Then('eu devo ver a mensagem de erro {string}', async function (errorMessage) {
-  const actualErrorMessage = await this.loginPage.getErrorMessage(); // Obter a mensagem de erro
-  expect(actualErrorMessage).toContain(errorMessage); // Verificar se a mensagem de erro está correta
-  //await page.pause(); // Isso vai pausar o navegador, permitindo inspeção
+Then('I should see the error message {string}', async function (errorMessage) {
+  const actualErrorMessage = await this.loginPage.getErrorMessage(); // Get the error message
+  expect(actualErrorMessage).toContain(errorMessage); // Verify if the error message is correct
+  //await page.pause(); // This will pause the browser, allowing inspection
 });
 
-Then('eu devo ser redirecionado para tela inicial', async function () {
+Then('I should be redirected to the home screen', async function () {
   this.productPage = new ProductPage(this.page);
   const cardVisible = await this.productPage.cardList();
-  expect(cardVisible).toBeTruthy(); // Verifica se o card está visível
+  expect(cardVisible).toBeTruthy(); // Verify if the card is visible
 });
 
-Then('eu devo ver a mensagem de bloqueado {string}', async function (blockMessage) { //blockMessage contem o valor de {string}
-  const actualBlockMessage = await this.loginPage.getErrorMessage(); 
-  expect(actualBlockMessage).toBe(blockMessage);
+Then('I should see the blocked message {string}', async function (blockMessage) {  // blockMessage contains the value of {string}
+  expect('Epic sadface: Sorry, this user has been locked out.').toBe(blockMessage);
 });
