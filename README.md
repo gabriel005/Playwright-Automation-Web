@@ -1,20 +1,20 @@
-## **Teste Automatizado Utilizando Playwright e Cucumber**
+## **Automated Testing Using Playwright and Cucumber**
 
-Testes Automatizados com Playwright - SauceDemo
+Automated Tests with Playwright - SauceDemo  
 
-## **📌 Resumo**
-Este projeto utiliza o Playwright para a automação de testes end-to-end no site SauceDemo. O objetivo é validar funcionalidades como login, navegação, adição de produtos ao carrinho e finalização de compra.
+## **📌 Summary**
+This project uses Playwright for end-to-end test automation on the SauceDemo website. The goal is to validate functionalities such as login, navigation, adding products to the cart, and completing a purchase.  
 
-## **🖥️ Ambiente de Teste**
-Sistema Operacional: Windows  
-Linguagem: JavaScript  
+## **🖥️ Test Environment**
+Operating System: Windows  
+Language: JavaScript  
 Framework: Playwright  
-URL do site: https://www.saucedemo.com  
-Pipeline de Automação: CI/CD: GitHub Actions
+Website URL: https://www.saucedemo.com  
+Automation Pipeline: CI/CD with GitHub Actions  
 
-## **🚀 Como Executar os Testes**
-1️⃣ Instalação das Dependências  
-Certifique-se de ter o Node.js instalado e execute:  
+## **🚀 How to Run the Tests**
+1️⃣ Installing Dependencies  
+Make sure you have Node.js installed, then run:  
 ```sh 
 npm install
 ```
@@ -26,44 +26,44 @@ npx playwright install
 ```
 
 
-## **2️⃣ Executando os Testes**
-Para rodar todos os testes:
+## **2️⃣ Running the Tests**
+To run all tests:  
 ```sh 
 npx cucumber-js --require src/tests/keywords/hooks.js --require src/tests/keywords src/tests/feature --tags "@site" --format json:cucumber_report.json 
 ```
-Para gerar relatórios dos testes:
+To generate test reports:  
 ```sh 
 node report.js
 ```
 
 
-## **Detalhes dos Testes**
-Os testes cobrem os seguintes cenários:
+## **Test Details**
+The tests cover the following scenarios:
 
 `1️⃣ Login:`  
-Login válido (usuário e senha corretos)  
-Login inválido (credenciais erradas)  
-Bloqueio de usuário com conta bloqueada  
+Valid login (correct username and password)  
+Invalid login (incorrect credentials)  
+Blocked user account login  
 
-`2️⃣ Navegação e Produtos:`  
-Verificação da listagem de produtos  
-Ordenação de produtos  
-Acesso à página de detalhes de um produto  
+`2️⃣ Navigation & Products:`  
+Product listing verification  
+Product sorting  
+Accessing a product detail page  
 
-`3️⃣ Carrinho de Compras:`  
-Adição de produtos do carrinho  
-Remoção de produtos do carrinho  
+`3️⃣ Shopping Cart:`  
+Adding products to the cart  
+Removing products from the cart   
 
 `4️⃣ Checkout:`    
-Validação de erro ao tentar finalizar sem preencher os campos obrigatórios  
-Finalização da compra com sucesso  
+Error validation when trying to complete a purchase without filling in the required fields  
+Successful purchase completion  
 
-## **Relatório dos Testes**
-Os testes cobrem os seguintes cenários:  
+## **Test Report**
+The tests cover the following scenarios:  
 ![image](https://github.com/user-attachments/assets/140b21a5-0bf3-40a4-950c-980a2f5ba6da)  
 
   
-## **📌 Considerações Finais**
-Este repositório pode ser expandido para incluir mais cenários e possui integração com pipeline CI/CD no GitHub Actions para execução contínua dos testes  
+## **📌 Final Considerations**
+This repository can be expanded to include more scenarios and has integration with a CI/CD pipeline in GitHub Actions for continuous test execution.  
    
 
