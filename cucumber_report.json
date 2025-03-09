@@ -4,6 +4,612 @@
     "elements": [
       {
         "description": "",
+        "id": "cenários-de-login-no-site-saucedemo;login-válido-(usuário-e-senha-corretos)",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Login válido (usuário e senha corretos)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 515308900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1421930499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "eu tento fazer login com o usuário \"standard_user\" e senha \"secret_sauce\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162909599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "eu devo ser redirecionado para tela inicial",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32078100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 300746400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@login_valido",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cenários-de-login-no-site-saucedemo;login-inválido-(credenciais-erradas)",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login inválido (credenciais erradas)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 487404599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1460958900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "eu tento fazer login com o usuário \"user\" e senha \"wrongpassword\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96484000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "eu devo ver a mensagem de erro \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23133500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 263933799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@login_invalido",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cenários-de-login-no-site-saucedemo;bloqueio-de-usuário-com-conta-bloqueada",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Bloqueio de usuário com conta bloqueada",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 459145299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1444499400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "eu tento fazer login com o usuário \"user\" e senha \"wrongpassword\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95387199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "eu devo ver a mensagem de bloqueado \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20018099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 274889999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@login_bloqueado",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cenários-de-login-no-site-saucedemo",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Cenários de Login no site saucedemo",
+    "tags": [
+      {
+        "name": "@site",
+        "line": 1
+      },
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "src\\tests\\feature\\01-login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "cenários-de-navegação-e-produtos;verificação-da-listagem-de-produtos",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verificação da listagem de produtos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 525759699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1405422899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "eu tento fazer login com o usuário \"standard_user\" e senha \"secret_sauce\"",
+            "match": {
+              "location": "src\\tests\\keywords\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 145227999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "eu devo ver a lista de produtos na pagina principal",
+            "match": {
+              "location": "src\\tests\\keywords\\productsSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42079200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 279984599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@products",
+            "line": 1
+          },
+          {
+            "name": "@products_list",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cenários-de-navegação-e-produtos;ordenação-de-produtos",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Ordenação de produtos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 490551999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "que eu estou na página de produtos",
+            "match": {
+              "location": "src\\tests\\keywords\\productsSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1621356099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "clico para ordernar um produto por preço",
+            "match": {
+              "location": "src\\tests\\keywords\\productsSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50584899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "eu devo ver os preços do menor pro maior",
+            "match": {
+              "location": "src\\tests\\keywords\\productsSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16418499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 268286000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@products",
+            "line": 1
+          },
+          {
+            "name": "@products_order",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cenários-de-navegação-e-produtos;acesso-à-página-de-detalhes-de-um-produto",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Acesso à página de detalhes de um produto",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 473377599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "que eu estou na página de produtos",
+            "match": {
+              "location": "src\\tests\\keywords\\productsSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1623091700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "clico para visualizar os detalhes de um produto",
+            "match": {
+              "location": "src\\tests\\keywords\\productsSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141910099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "eu devo ver a pagina de detalhes do produto selecionado",
+            "match": {
+              "location": "src\\tests\\keywords\\productsSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13896499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 286926300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@products",
+            "line": 1
+          },
+          {
+            "name": "@products_details",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cenários-de-navegação-e-produtos",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Cenários de Navegação e Produtos",
+    "tags": [
+      {
+        "name": "@site",
+        "line": 1
+      },
+      {
+        "name": "@products",
+        "line": 1
+      }
+    ],
+    "uri": "src\\tests\\feature\\02-products.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "cenários-de-login-no-site-saucedemo;adição-de-produtos-do-carrinho",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Adição de produtos do carrinho",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 468177799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que eu estou na página de produtos",
+            "match": {
+              "location": "src\\tests\\keywords\\productsSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1588186600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "clico para adicionar um produto no carrinho",
+            "match": {
+              "location": "src\\tests\\keywords\\buySteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123023000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "clico em carrinho",
+            "match": {
+              "location": "src\\tests\\keywords\\buySteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47051299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "eu devo ver o produto adicionado no carrinho",
+            "match": {
+              "location": "src\\tests\\keywords\\buySteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12941200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 301982800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@buy",
+            "line": 1
+          },
+          {
+            "name": "@item_add",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
         "id": "cenários-de-login-no-site-saucedemo;remoção-de-produtos-do-carrinho",
         "keyword": "Scenario",
         "line": 12,
@@ -14,7 +620,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 516282500
+              "duration": 477741999
             }
           },
           {
@@ -27,7 +633,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1624872300
+              "duration": 1594817899
             }
           },
           {
@@ -40,7 +646,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 170070100
+              "duration": 184136699
             }
           },
           {
@@ -53,7 +659,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38672500
+              "duration": 39442699
             }
           },
           {
@@ -66,7 +672,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30289699
+              "duration": 29555299
             }
           },
           {
@@ -79,7 +685,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10002500
+              "duration": 8080699
             }
           },
           {
@@ -87,7 +693,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 181500
+              "duration": 286166199
             }
           }
         ],
@@ -123,5 +729,209 @@
       }
     ],
     "uri": "src\\tests\\feature\\03-buy.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "cenários-de-checkout;validação-de-erro-ao-tentar-finalizar-sem-preencher-os-campos-obrigatórios",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Validação de erro ao tentar finalizar sem preencher os campos obrigatórios",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 462653900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que eu estou na página de checkout",
+            "match": {
+              "location": "src\\tests\\keywords\\checkout.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1821421600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "clico no botão de Continue",
+            "match": {
+              "location": "src\\tests\\keywords\\checkout.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38870999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "eu devo ver a mensagem no formulario de erro \"Error: First Name is required\"",
+            "match": {
+              "location": "src\\tests\\keywords\\checkout.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 613000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 286456399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@checkout",
+            "line": 1
+          },
+          {
+            "name": "@checkout_fail",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cenários-de-checkout;finalização-da-compra-com-sucesso",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Finalização da compra com sucesso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 483737000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "que eu estou na página de checkout",
+            "match": {
+              "location": "src\\tests\\keywords\\checkout.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1819206099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "preencho todos os dados",
+            "match": {
+              "location": "src\\tests\\keywords\\checkout.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48891800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "clico no botão de Continue",
+            "match": {
+              "location": "src\\tests\\keywords\\checkout.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39891899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "clico no botão de Finish",
+            "match": {
+              "location": "src\\tests\\keywords\\checkout.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33796100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "eu devo ver a mensagem de sucesso \"Thank you for your order!\"",
+            "match": {
+              "location": "src\\tests\\keywords\\checkout.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 649199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 284291699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@site",
+            "line": 1
+          },
+          {
+            "name": "@checkout",
+            "line": 1
+          },
+          {
+            "name": "@checkout_finish",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cenários-de-checkout",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Cenários de Checkout",
+    "tags": [
+      {
+        "name": "@site",
+        "line": 1
+      },
+      {
+        "name": "@checkout",
+        "line": 1
+      }
+    ],
+    "uri": "src\\tests\\feature\\04-checkout.feature"
   }
 ]
