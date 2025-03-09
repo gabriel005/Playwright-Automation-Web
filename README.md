@@ -53,7 +53,6 @@ Acesso à página de detalhes de um produto
 `3️⃣ Carrinho de Compras:`  
 Adição de produtos do carrinho  
 Remoção de produtos do carrinho  
-Verificação do conteúdo do carrinho  
 
 `4️⃣ Checkout:`  
 Preenchimento de dados do checkout  
