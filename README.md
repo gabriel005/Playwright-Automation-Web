@@ -54,8 +54,7 @@ Acesso à página de detalhes de um produto
 Adição de produtos do carrinho  
 Remoção de produtos do carrinho  
 
-`4️⃣ Checkout:`  
-Preenchimento de dados do checkout  
+`4️⃣ Checkout:`    
 Validação de erro ao tentar finalizar sem preencher os campos obrigatórios  
 Finalização da compra com sucesso  
 
