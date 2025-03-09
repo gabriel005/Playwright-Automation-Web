@@ -59,4 +59,7 @@ Validação de erro ao tentar finalizar sem preencher os campos obrigatórios
 Finalização da compra com sucesso  
 
 ## **📌 Considerações Finais**
-Este repositório pode ser expandido para incluir mais cenários e integração com pipelines CI/CD para execução contínua dos testes
+Este repositório pode ser expandido para incluir mais cenários e integração com pipelines CI/CD para execução contínua dos testes  
+
+![image](https://github.com/user-attachments/assets/140b21a5-0bf3-40a4-950c-980a2f5ba6da)
+
