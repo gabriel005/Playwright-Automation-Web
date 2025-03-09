@@ -14,7 +14,7 @@ Scenario: Product sorting
     Then I should see the prices from lowest to highest
 
 @products_details
-Scenario: Accessing the product details page
+Scenario: Accessing a product detail page
     Given I am on the product page
     When I click to view the details of a product
     Then I should see the selected product's details page
